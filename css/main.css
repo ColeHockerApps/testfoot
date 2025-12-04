@@ -1164,6 +1164,26 @@ main{
         height: 150px;
     }
 
+    .game-header nav {
+        width: 100%;
+        overflow-x: auto;
+    }
 
-    
+    .header-tabs {
+        display: flex;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+
+    .header-tabs li {
+        margin: 0.5rem 1rem;
+        flex-shrink: 0;
+    }
+
+    .tab-team.mobile-section {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        padding: 0 0.5rem;
+    }
 }
