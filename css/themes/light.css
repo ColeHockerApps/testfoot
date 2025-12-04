@@ -22,3 +22,32 @@
     --color-window-header: #a2a2a2;
     --color-window-border: #4f4f4f;
 }
+
+/* ========================= */
+/* === MOBILE OPTIMIZED ==== */
+/* ========================= */
+
+@media (max-width: 768px){
+
+    :root{
+        /* Чуть выше контраст на мелких экранах */
+        --color-header: #368238;
+        --color-background: #1f5321;
+
+        --color-button: #287e2c;
+        --color-button-selected: #3fbb45;
+
+        --color-card: #f0f0f0;
+        --color-card-border: #666666;
+
+        --color-table-header: #cc0000;
+        --color-table-pos: #880000;
+
+        /* Усиление читаемости текста */
+        --color-text: #ffffff;
+        --color-text-dark: #000000;
+
+        /* Чуть более заметные бордеры */
+        --color-border: #0f4f0f;
+    }
+}
