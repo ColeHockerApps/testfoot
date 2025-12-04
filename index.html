@@ -27,16 +27,19 @@
 </head>
 <body>
 
-<div id="app">
-    <game-header v-if="init"></game-header>
-    <tutorial v-if="showTutorial"></tutorial>
-    <main>
-        <component :is="tab"></component>
-    </main>
+<!-- 🔥 MOBILE WRAPPER — добавлено -->
+<div id="game-wrapper">
+    <div id="app">
+        <game-header v-if="init"></game-header>
+        <tutorial v-if="showTutorial"></tutorial>
+        <main>
+            <component :is="tab"></component>
+        </main>
+    </div>
 </div>
+<!-- 🔥 END WRAPPER -->
 
 <!-- Lib -->
-<!--<script src="js/lib/vue.js"></script>-->
 <script src="js/lib/vue.prod.js"></script>
 <script src="js/lib/break_infinity.min.js"></script>
 <script src="js/lib/ad-notations.min.js"></script>
